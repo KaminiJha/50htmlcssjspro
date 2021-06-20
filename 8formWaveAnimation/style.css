@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100%;
+    font-family:'Pangolin',cursive;
+    font-size: 18px;
+    overflow: hidden;
+    color:#fff;
+    margin:0px;
+    background-color:rgb(228, 146, 146) ;
+}
+.container
+{
+    background-color: rgb(218, 102, 102);
+    border:0;
+    border-radius: 10px;
+    padding:20px;
+
+}
+.heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container a{
+    text-decoration: none;
+    color:rgb(235, 178, 178);
+}
+
+.form-control{
+    position: relative;
+    margin:20px 0px 40px;
+}
+.form-control input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    display:block;
+    width:100%;
+    padding:5px;
+    color:#fff;
+    font-size: 14px;
+}
+.form-control input:focus,.form-control input:valid{
+    outline: none;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    color:#fff;
+    font-size:16px;
+    background-color: rgb(228, 146, 146);
+    font-weight: bolder;
+    cursor:pointer;
+}
+button:active{
+    transform: scale(0.98);
+}
+
+.form-control label{
+    position:absolute;
+    top:2px;
+    left:0;
+}
+
+.form-control label span{
+display: inline-block;/*so tht we can apply translate*/
+font-size: 18px;
+transition: 0.35s cubic-bezier(0.68,-0.55,0.2665,1.55);
+min-width:5px;
+
+}
+
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+color:rgb(241, 200, 200);
+transform: translateY(-30px);
+} 
