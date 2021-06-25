@@ -1,0 +1,46 @@
+*
+{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+
+}
+button{
+    padding:10px;
+}
+.main
+{
+    display: none;
+}
+button:focus{
+    transform: scaleY(0.9);
+}
+button:active{
+    outline: none;
+}
+.key
+{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.key div{
+    background-color: blueviolet;
+    height:100px;
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    margin:20px 20px;
+}
