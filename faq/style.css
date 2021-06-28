@@ -1,0 +1,124 @@
+*
+{
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    /* overflow-x: hidden; */
+ 
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    transition: 0.4s ease-in;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container h1{
+    font-size:1.3rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(168, 168, 170);
+    width:fit-content;
+    padding:10px;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+.ques
+{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width:500px;
+    min-height:80px;
+    border:1px solid rgb(165, 163, 163);
+    position:relative;
+    padding:10px 40px;
+    background-color: transparent;
+}
+.ques.active
+{
+    background-color: white;
+    box-shadow:0 3px 6px rgba(0,0,0,0.2),0 3px 6px rgba(0,0,0,0.2);
+}
+.ques.active::after,
+.ques.active::before
+{
+    content:'\f27a';
+    font-family: 'FontAwesome';
+    color:lightcyan;
+    font-size:4rem;
+    position:absolute;
+    opacity: 0.7;
+    top:8px;
+    left:10px;
+}
+.ques.active::before{
+    top:-10px;
+    left:-2px;
+    color: rgba(172, 216, 236, 0.637);
+    transform:rotateY(180deg);
+    
+}
+.ques.active::after{
+    top:15px;
+    left:80px;
+    color: rgba(188, 223, 238, 0.384);
+}
+.ques .question
+{
+margin-bottom: 10px;
+font-size:1.2rem;
+font-weight: bold;
+padding:0 20px;
+width:300px;
+}
+.ques .ans
+{
+    display:none;
+    font-size:0.9rem;
+    font-weight: lighter;
+    width:300px;
+    padding:0 20px;
+    margin-bottom: 20px;
+} 
+.ques.active .ans{
+    display:block;
+}
+
+button{
+    position:absolute;
+    top:8px;
+    right:10px;
+}
+.toggle-btn
+{
+    background-color: transparent;
+    font-size:16px;
+    border:0px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px;
+}
+
+.toggle-btn .fa-times
+{
+    display:none;
+}
+.ques.active .toggle-btn .fa-times
+{
+    display: block;
+}
+
+.ques.active .toggle-btn .fa-chevron-down
+{
+    display: none;
+}
