@@ -2,8 +2,7 @@
 {
     box-sizing: border-box;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin:0px;
-    padding:0px;
+
 }
 
 body
@@ -11,7 +10,96 @@ body
     display:flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width:100vw;
-    overflow:hidden;
+    background-color: steelblue;
+    color:#fff;
+}
+.container
+{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    margin: 0;
+}
+h3
+{
+    font-size:18px;
+    margin:0px;
+}
+.cup
+{
+background-color: #fff;
+border:1px solid blue;
+color:blue;
+border-radius:0 0 40px 40px;
+height:200px;
+width:150px;
+margin:30px 0px;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+.text
+{
+    margin:0px;
+}
+.cups{
+display: flex;
+flex-wrap: wrap;
+width:260px;
+align-items: center;
+justify-content: center;
+}
+.cup.small-cup
+{
+    width:50px;
+    height:80px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #fff;
+    cursor:pointer;
+    font-size:14px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:5px 5px;
+    margin-right:5px;
+    margin-bottom: 0px;
+    transition:0.3s ease;
+}
+.cup.small-cup.full
+{
+    background-color: rgba(0, 0, 255, 0.637);
+    color:white;
+}
+.remained
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+    transition: 0.3s ease;
+}
+.remained span
+{
+    font-size:17px;
+    font-weight: bold;
+}
+.remained small{
+    font-size: 12px;
+}
+.percentage
+{
+    background-color: blue;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    height:20%;
 }
