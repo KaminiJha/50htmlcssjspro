@@ -6,12 +6,125 @@
     padding:0px;
 }
 
-body
+.container
 {
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     width:100vw;
     overflow:hidden;
+    color:black;
+    background-color: #fff;
+}
+.container.night
+{
+    color:rgb(209, 202, 202);
+    background-color: black;
+}
+.modeSwitchBtn
+{
+background-color: black;
+color:white;
+border: 0px;
+border-radius: 5px;
+padding:0.3rem 1rem;
+letter-spacing: 0.5rem;
+cursor: pointer;
+margin:50px;
+}
+.container.night .modeSwitchBtn
+{
+    background-color: white;  
+    color:black;
+}
+.modeSwitchBtn:active{
+    transform: scaleY(0.9);
+}
+.clock
+{
+    height:20%;
+    margin:30px;
+}
+.needle
+{
+    height:65px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:3px;
+    transform-origin: bottom center;
+
+}
+.hour
+{
+    background-color:  black;
+    transform: translate(-50%,-100%) rotate(30deg);
+}
+.container.night .hour{
+    background-color:  #fff;
+}
+.minute
+{
+    /* content:'';
+    width:9rem; */
+    height:80px;
+    transform: translate(-50%,-100%) rotate(0deg);
+    background-color:  rgb(31, 30, 30);
+}
+.container.night .minute
+{
+    background-color:  #fff;
+}
+.second
+{
+    /* content:'';
+    width:12rem; */
+    height:100px;
+    transform: translate(-50%,-100%) rotate(60deg);
+    background-color:  red;
+}
+.container.night .second
+{
+    background-color:  red;
+}
+.center-point
+{
+    background-color: red;
+    width:12px;
+    height:10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius:50%;
+}
+
+.time-num
+{
+    font-size: 30px;
+    /* color:black; */
+    margin-bottom: 10px;
+}
+.time-period
+{
+    color:black;
+}
+
+.day-date
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:120px;
+}
+.date{
+    background-color: rgb(172, 170, 170);
+    border-radius: 50px;
+    padding:0.3rem;
+}
+.container.night .date{
+    background-color: rgb(97, 96, 96);
 }
