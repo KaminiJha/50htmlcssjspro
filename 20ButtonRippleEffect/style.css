@@ -15,3 +15,41 @@ body
     width:100vw;
     overflow:hidden;
 }
+#btn
+{ position: relative;
+    padding:1rem 2rem;
+    overflow:hidden;
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius: 10px;
+    letter-spacing: 0.4rem;
+}
+#btn:focus{
+    outline: none;
+}
+#btn:active{
+    transform:scaleY(
+        0.9
+    )
+}
+#btn .circle
+{
+    position:absolute;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: rgb(233, 224, 224);
+    transform:translate(-50%,-50%) scale(0);
+    animation:scale 0.5s ease-out;
+    
+}
+
+@keyframes scale{
+    to
+    {
+        transform:translate(-50%,-50%) scale(3);
+        opacity:0;
+    }  
+    
+}
