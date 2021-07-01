@@ -10,8 +10,87 @@ body
 {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100vh;
     width:100vw;
     overflow:hidden;
+}
+
+#canvas
+{
+    height:85vh;
+    width:99vw;
+    border:2px solid black;
+    position: relative;
+    margin-bottom: 0px;
+    margin-top:-80px; 
+}
+.toolBar
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between ;
+
+    height:10vh;
+    width:99vw;
+    position: absolute;
+    bottom:10px;
+    border:2px solid blue;
+    padding:1rem;
+    background-color: steelblue;
+}
+.leftTool
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button
+{
+cursor:pointer;
+background-color: #fff;
+font-size: 20px;
+margin: 0px 10px;
+color: steelblue;
+border: 0px;
+padding:0.4rem;
+border-radius: 10px;
+}
+.inc:active{
+    transform: scaleY(0.9);
+}
+.desc:active{
+    transform: scaleY(0.9);
+}
+.size
+{
+font-size: 20px;
+color:#fff;
+font-weight: bolder;
+padding:0.3rem;
+}
+
+.colorBox
+{
+    height:20px;
+    width:20px;
+    border: 3px solid black;
+    padding:0.7rem;
+    margin-left:10px;
+    background-color: red;
+    cursor:pointer;
+}
+
+.clear
+{
+    background-color: transparent;
+}
+.fa-window-close
+{
+    color:white;
+    font-size: 30px;
+    margin-top: -20px;
+}
+.clear:active{
+    transform: scaleY(0.9);
 }
